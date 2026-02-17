@@ -1,0 +1,7 @@
+{
+  "name": "BDC Vault",
+  "description": "The official digital wallet of BDC Cartel. Manage Genesis NFTs, contactless payments, and wealth strategy.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

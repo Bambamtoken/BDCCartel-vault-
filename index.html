@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDC Vault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                400: '#e5c048',
+                500: '#d4af37', // BDC Gold
+                600: '#b08d26',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #000000; /* Pure Black */
+        color: #f8fafc;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #111; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333; 
+        border-radius: 4px;
+        border: 1px solid #000;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #d4af37; 
+      }
+      .glass-panel {
+        background: rgba(20, 20, 20, 0.85);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(212, 175, 55, 0.15); /* Gold border hint */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+      }
+      .glass-panel-gold {
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.1), rgba(0, 0, 0, 0.9));
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(212, 175, 55, 0.3);
+      }
+      .text-gradient-gold {
+        background: linear-gradient(to right, #fff, #d4af37);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .nfc-pulse {
+        animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+      }
+      @keyframes pulse-ring {
+        0% { transform: scale(0.33); opacity: 1; border-color: #d4af37; }
+        80%, 100% { transform: scale(2); opacity: 0; border-color: #d4af37; }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
