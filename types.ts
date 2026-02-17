@@ -1,7 +1,7 @@
 
 export interface Transaction {
   id: string;
-  type: 'payment' | 'receive' | 'nft_purchase' | 'mining_reward' | 'trade_profit' | 'mint_fee';
+  type: 'payment' | 'receive' | 'nft_purchase' | 'mining_reward' | 'trade_profit' | 'mint_fee' | 'compute_fee';
   amount: number;
   currency: 'USD' | 'BDCC';
   merchant?: string;
@@ -16,6 +16,13 @@ export interface NFT {
   imageUrl: string;
   value: number;
   change24h: number;
+}
+
+export interface VideoAsset {
+  id: string;
+  url: string;
+  prompt: string;
+  timestamp: string;
 }
 
 export interface ChatMessage {
@@ -46,6 +53,7 @@ export interface EmpireNode {
 }
 
 export enum AppView {
+  LAUNCH = 'LAUNCH',
   DASHBOARD = 'DASHBOARD',
   PAY = 'PAY',
   PAY_NFC = 'PAY_NFC',
@@ -55,5 +63,6 @@ export enum AppView {
   ADVISOR = 'ADVISOR',
   MINT = 'MINT',
   MINING = 'MINING',
-  TRADING = 'TRADING'
+  TRADING = 'TRADING',
+  VIDEO_GEN = 'VIDEO_GEN'
 }

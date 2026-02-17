@@ -1,6 +1,6 @@
 {
-  "name": "BDC Vault",
-  "description": "The official digital wallet of BDC Cartel. Manage Genesis NFTs, contactless payments, and wealth strategy.",
+  "name": "BDC Cartel Official",
+  "description": "The official decentralized ecosystem of BDC Cartel. Manage private wealth, neural rendering, and global mining operations.",
   "requestFramePermissions": [
     "camera"
   ]
